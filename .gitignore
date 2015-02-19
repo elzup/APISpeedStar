@@ -1,0 +1,8 @@
+vendor/
+.env.php
+.env
+
+.htaccess
+
+.idea
+composer.lock

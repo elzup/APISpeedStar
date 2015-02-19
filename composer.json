@@ -1,0 +1,20 @@
+{
+    "name": "elzzup/api_base",
+    "authors": [
+        {
+            "name": "elzzup",
+            "email": "guild0105@gmail.com"
+        }
+    ],
+    "require": {
+        "php-activerecord/php-activerecord": "@dev",
+        "robmorgan/phinx": "*",
+        "slim/slim": "2.*",
+        "slim/views": "0.1.*",
+        "slim/extras": "2.0.*",
+        "twig/twig": "1.*"
+    },
+    "autoload": {
+        "psr-0": {"":"lib/"}
+    }
+}
