@@ -1,7 +1,7 @@
 <?php
 
 // $domain = 'hoge.com';
-define('HOST', 'localhost:3000');
+define('HOST', 'localhost/api-master');
 
 
 $params = array(
