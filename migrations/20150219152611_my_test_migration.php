@@ -5,24 +5,15 @@ use Phinx\Migration\AbstractMigration;
 class MyTestMigration extends AbstractMigration
 {
     /**
-     * Change Method.
-     *
-     * More information on this method is available here:
-     * http://docs.phinx.org/en/latest/migrations.html#the-change-method
-     *
-     * Uncomment this method if you would like to use it.
-     *
-    public function change()
-    {
-    }
-    */
-    
-    /**
      * Migrate Up.
      */
     public function up()
     {
-    
+        $posts = $this->table('posts');
+        $posts->addColumn('title', 'string', array('limit' => 40))
+            ->addColumn('body', 'text')
+            ->addColumn('created', 'datetime')
+            ->save();
     }
 
     /**
@@ -30,6 +21,6 @@ class MyTestMigration extends AbstractMigration
      */
     public function down()
     {
-
+        $this->dropTable('posts');
     }
 }
